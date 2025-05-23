@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>UCI-INDIA</title>
+   <link href="img/Uci_Logo.png" rel="icon">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link rel="stylesheet" href="lib/animate/animate.min.css" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Spinner Start -->
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+ 
+
+ 
+  <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="/" class="navbar-brand p-0">
+          <h1 class="text-primary mb-0"> <img src="/img/Uci_Logo.png" alt=""> </h1>
+          <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav mx-0 mx-lg-auto">
+            <a href="index.html" class="nav-item nav-link ">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+            <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle">Solutions</span>
+              </a>
+              <div class="dropdown-menu">
+                <a href="/Salesforce-Solutions.html" class="dropdown-item active">Salesforce Solutions</a>
+                <a href="/Microsoft-Solutions.html" class="dropdown-item">Microsoft Solutions</a>
+                
+              </div>
+            </div>
+            <a href="/careers.html" class="nav-item nav-link active">Careers</a>
+            <a href="contact.html" class="nav-item nav-link ">Contact</a>
+           
+          </div>
+        </div>
+        <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+          <a target="_blank" href="https://maps.app.goo.gl/DkjQrEYNrSVCsYSe6" class="btn btn-primary rounded-circle ms-3 flex-shrink-0"><i class="fas fa-map-marker-alt"></i></a>
+          <a target="_blank" href="mailto:hr@uci-india.com" class="btn btn-primary rounded-circle ms-3 flex-shrink-0"><i class="fas fa-envelope"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/company/unite-computech-info-india-pvt-ltd/" class="btn btn-primary rounded-circle ms-3 flex-shrink-0"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Navbar & Hero End -->
+
+  <!-- Modal Search Start -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-items-center bg-primary">
+          <div class="input-group w-75 mx-auto d-flex">
+            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Search End -->
+
+
+  <!-- Header Start -->
+  <div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+      <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Application Form</h4>
+      <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
+        <li class="breadcrumb-item navlink text-primary">Careers</li>
+      </ol>
+    </div>
+  </div>
+  <!-- Header End -->
+
+
+  <!-- Contact Start -->
+  <div class="container-fluid contact bg-light py-5">
+    <div class="container py-5">
+      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <h2 class="text-primary">Job Application Form</h2>
+       
+      </div>
+      <div class="row g-5">
+       
+        <div class="col-xl-12 wow fadeInRight" data-wow-delay="0.4s">
+          <div>
+           
+          <form action="applicant.php" method="POST" enctype="multipart/form-data">
+    <div class="row g-3">
+        <div class="col-lg-12 col-xl-6">
+            <div class="form-floating">
+                <input type="text" class="form-control border-0" id="full_name" name="full_name" placeholder="Enter your full name" required>
+                <label for="full_name">Full Name</label>
+            </div>
+        </div>
+        
+        <div class="col-lg-12 col-xl-6">
+            <div class="form-floating">
+                <input type="email" class="form-control border-0" id="email" name="email" placeholder="Enter your email address" required>
+                <label for="email">Email</label>
+            </div>
+            
+
+        </div>
+        <div class="col-lg-3 col-xl-3">
+                        <div class="form-floating">
+                <input type="number" class="form-control border-0" id="age" name="age" min="1" max="120" placeholder="Enter your age">
+                <label for="age">Age</label>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-xl-3">
+            <div class="form-floating">
+                <select class="form-control border-0" id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                </select>
+                <label for="Gender">Gender</label>
+                
+            </div>
+        </div>
+        
+         <div class="col-lg-3 col-xl-3">
+                        <div class="form-floating">
+                <input type="number" class="form-control border-0" id="years_experience" name="years_experience" min="1" max="120" placeholder="Number of relevant years of experience">
+                <label for="years_experience">Years of experience</label>
+            </div>
+        </div>
+        
+        
+        
+        <div class="col-lg-3 col-xl-3">
+            <div class="form-floating">
+                <select class="form-control border-0" id="position" name="position" required>
+                    <option value="">Select Position</option>
+                    <option value="Salesforce Developer">Salesforce Developer</option>
+                    <option value="UI / UX">UI / UX</option>
+                    <option value="Microsoft Azure">Microsoft Azure</option>
+                    <option value="Adobe">Adobe</option>
+                </select>
+                <label for="position">Position</label>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="col-12">
+            <div class="form-floating">
+                <input type="text" class="form-control border-0" id="how_did_you_know" name="how_did_you_know" placeholder="Describe how you heard about us">
+                <label for="how_did_you_know">How did you get to know about UCI</label>
+            </div>
+        </div>
+        
+       
+        
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control border-0" id="previous_experiences" name="previous_experiences" placeholder="Share any relevant past experiences" style="height: 100px"></textarea>
+                <label for="previous_experiences">Any previous experiences?</label>
+            </div>
+        </div>
+        
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control border-0" id="unique_trait" name="unique_trait" placeholder="Describe your unique trait" style="height: 100px"></textarea>
+                <label for="unique_trait">What sets you apart from anyone else?</label>
+            </div>
+        </div>
+        
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control border-0" id="interest_in_role" name="interest_in_role" placeholder="Explain why you're interested in this position" style="height: 100px"></textarea>
+                <label for="interest_in_role">Why are you interested in this job role?</label>
+            </div>
+        </div>
+        
+        <div class="col-12">
+            <div class="form-floating">
+               <div class="form-control border-0" style="height: 100px">
+                               <label for="Resume">Upload Resume</label><br/>
+                <input type="file" class=" border-0" id="resume_upload" name="resume_upload" accept=".pdf, .doc, .docx" required>
+                
+       
+       
+                 </div>
+            </div>
+             
+        </div> 
+        
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100 py-3">Submit Application</button>
+        </div>
+    </div>
+</form>
+          </div>
+        </div>
+      
+
+
+       
+      </div>
+    </div>
+  </div>
+  <!-- Contact End -->
+
+<!-- Acknowledge Modal -->
+<div class="modal fade" id="acknowledgeModal" tabindex="-1" aria-labelledby="acknowledgeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="acknowledgeModalLabel">Application Submitted</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Thank you for applying. Your application has been submitted successfully.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add the script at the end of the body -->
+<script>
+  // Prevent default form submission and show modal
+  $('form').on('submit', function (event) {
+    event.preventDefault();  // Prevent the default form submission
+    $('#acknowledgeModal').modal('show');  // Show the modal
+  });
+
+  // Redirect on modal close
+  $('#acknowledgeModal').on('hidden.bs.modal', function () {
+    window.location.href = 'index.html';  // Redirect to index.html after closing
+  });
+</script>
+  <!-- Footer Start -->
+  <div class="container-fluid footer wow fadeIn" data-wow-delay="0.2s">
+    <div class="container pt-5">
+      <div class="row g-5">
+        <div class="col-xl-12">
+          <div class="mb-5">
+            <div class="row g-4">
+
+              <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                  <a href="index.html" class="p-0">
+                    <h3 class="text-white"> <img src="/img/Footer_Logo.png" style="width: 80px;" alt=""> UCI INDIA</h3>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                  </a>
+                  <p class="text-white mt-2 " style="text-align: justify;">UCI, a certified business, leverages More than 12 years of expertise to deliver innovative IT solutions. We focus on compliance, and quality and service for our clients.</p>
+                  <!-- <div class="footer-btn d-flex">
+                    <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fas fa-map-marker-alt"></i></a>
+                    <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fas fa-envelope"></i></a>
+                    <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div> -->
+                </div>
+              </div>
+
+              <div class=" col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                  <h4 class="text-white mb-4 text-center">Useful Links</h4>
+
+                  <div class="row g-3 text-white mt-1 text-center">
+                    <!-- <div class="col-md-6"> -->
+
+                    <a href="/"><i class="fas fa-angle-right me-2"></i> Home &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a> <br>
+                    <a href="/about.html"><i class="fas fa-angle-right me-2"></i> About Us &nbsp; &nbsp; &nbsp; &nbsp; </a> <br>
+                    <a href="/service.html"><i class="fas fa-angle-right me-2"></i> Services &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a> <br>
+                    <a href="/careers.html"><i class="fas fa-angle-right me-2"></i> Careers &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a> <br>
+                    <!-- </div> -->
+                    <!-- <div class="col-md-6">
+                      <a href="#"><i class="fas fa-angle-right me-2"></i> Microsoft Solutions </a> <br>
+                      <a href="#"><i class="fas fa-angle-right me-2"></i> Careers </a> <br>
+                      <a href="#"><i class="fas fa-angle-right me-2"></i> Contact </a> <br>
+
+                    </div> -->
+                  </div>
+
+                </div>
+              </div>
+
+              <div class=" col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                  <h4 class="text-white mb-4">Useful Links</h4>
+
+                  <div class="row g-3 text-white mt-1">
+                   
+                    <a href="/Salesforce-Solutions.html"><i class="fas fa-angle-right me-2"></i> Salesforce Solutions </a> <br>
+                    <a href="/Microsoft-Solutions.html"><i class="fas fa-angle-right me-2"></i> Microsoft Solutions </a> <br>
+                    <a href="/contact.html"><i class="fas fa-angle-right me-2"></i> Contact </a> <br>
+
+                    <!-- </div> -->
+                  </div>
+
+
+
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                  <h4 class="mb-4 text-white"> Address </h4>
+
+                  <div class="row g-3 text-white mt-1">
+
+                    <p class="mt-2">
+                      803, Iscon Atria - 2, Besides, Gotri Rd, Gotri, Vadodara, Gujarat 390020, INDIA
+                    </p>
+
+                    <div class="footer-btn d-flex">
+                      <a class="btn btn-md-square rounded-circle me-3" target="_blank" href="https://maps.app.goo.gl/DkjQrEYNrSVCsYSe6"><i class="fas fa-map-marker-alt"></i></a>
+                      <a target="_blank" class="btn btn-md-square rounded-circle me-3" href="mailto:hr@uci-india.com"><i class="fas fa-envelope"></i></a>
+                      <a class="btn btn-md-square rounded-circle me-3" target="_blank" href="https://www.linkedin.com/company/unite-computech-info-india-pvt-ltd/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      
+
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright py-4">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class=" text-center mb-md-0">
+          <span class="text-center text-body text-white"><a href="#" class="border-bottom text-white">Copyright | 2024, UCI-INDIA | &nbsp; All right reserved. Terms and Conditions </a></span>
+          <a class="border-bottom text-white" href="https://htmlcodex.com"> </a> </a>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
+
+
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {},
+    Tawk_LoadStart = new Date();
+  (function() {
+    var s1 = document.createElement("script"),
+      s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/6703e574cec6d0125df2bae7/1i9jjgk93';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->
+
+</html>

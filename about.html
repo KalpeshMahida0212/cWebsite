@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>UCI-INDIA</title>
+   <link href="img/Uci_Logo.png" rel="icon">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link rel="stylesheet" href="lib/animate/animate.min.css" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Spinner Start -->
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+
+  <!-- Navbar & Hero Start -->
+  <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="/" class="navbar-brand p-0">
+          <h1 class="text-primary mb-0"> <img src="/img/Uci_Logo.png" alt=""> </h1>
+          <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav mx-0 mx-lg-auto">
+            <a href="index.html" class="nav-item nav-link ">Home</a>
+            <a href="about.html" class="nav-item nav-link active">About</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+            <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle">Solutions</span>
+              </a>
+              <div class="dropdown-menu">
+                <a href="/Salesforce-Solutions.html" class="dropdown-item active">Salesforce Solutions</a>
+                <a href="/Microsoft-Solutions.html" class="dropdown-item">Microsoft Solutions</a>
+                <!-- <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                    <a href="FAQ.html" class="dropdown-item">FAQs</a>
+                                    <a href="404.html" class="dropdown-item">404 Page</a> -->
+              </div>
+            </div>
+            <a href="/careers.html" class="nav-item nav-link">Careers</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <!-- <div class="nav-btn px-3">
+              <button class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+              <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Get a Quote</a>
+            </div> -->
+          </div>
+        </div>
+        <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+          <a target="_blank" href="https://maps.app.goo.gl/DkjQrEYNrSVCsYSe6" class="btn btn-primary rounded-circle ms-3 flex-shrink-0"><i class="fas fa-map-marker-alt"></i></a>
+          <a target="_blank" href="mailto:hr@uci-india.com" class="btn btn-primary rounded-circle ms-3 flex-shrink-0"><i class="fas fa-envelope"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/company/unite-computech-info-india-pvt-ltd/" class="btn btn-primary rounded-circle ms-3 flex-shrink-0"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Navbar & Hero End -->
+
+  <!-- Modal Search Start -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-items-center bg-primary">
+          <div class="input-group w-75 mx-auto d-flex">
+            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Search End -->
+
+
+  <!-- Header Start -->
+  <div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+      <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h4>
+      <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
+        <li class="breadcrumb-item navlink text-primary">About</li>
+      </ol>
+    </div>
+  </div>
+  <!-- Header End -->
+  <br>
+  <br>
+
+  <!-- About Start -->
+  <div class="container-fluid bg-light about pb-5">
+    <div class="container pb-5">
+      <div class="row g-5">
+        <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+          <div class="about-item-content bg-white rounded p-5 h-100">
+            <h4 class="text-primary">About Our Company</h4>
+            <h1 class="display-4 mb-4">Empowering Innovation Through Diversity</h1>
+            <p>UCI India, which stands for Unique Quality, is a dynamic, women-led organization with over 24 years of expertise in providing cutting-edge IT solutions. As an award-winning, minority-owned business, we focus on Salesforce, Oracle, Microsoft, and other technologies.
+
+            </p>
+            <p>We believe in simplicity, diversity, and compliance, ensuring that we deliver exceptional service that meets and exceeds client expectations.
+            </p><br>
+            <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>Leading Salesforce Partner in Public Sector
+            </p>
+            <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>Innovative IT Solutions and Services</p>
+            <p class="text-dark mb-4"><i class="fa fa-check text-primary me-3"></i>Trusted Salesforce & IT Innovators</p>
+            <p class="text-dark mb-4"><i class="fa fa-check text-primary me-3"></i>Commitment to Sustainability and Ethical Practices</p>
+            <p class="text-dark mb-4"><i class="fa fa-check text-primary me-3"></i>Proven Track Record of Success </p>
+            <p class="text-dark mb-4"><i class="fa fa-check text-primary me-3"></i>Continuous Learning and Development</p>
+            <!-- <a class="btn btn-primary rounded-pill py-3 px-5" href="#">More Information</a> -->
+          </div>
+        </div>
+        <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+          <div class="bg-white rounded p-5 h-100">
+            <div class="row g-4 justify-content-center">
+              <div class="col-12">
+                <div class="rounded bg-light">
+                  <img src="img/Aboutus.svg" class="img-fluid rounded w-100" alt="">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="counter-item bg-light rounded p-3 h-100">
+                  <div class="counter-counting">
+                    <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">12</span>
+                    <span class="h1 fw-bold text-primary">+</span>
+                  </div>
+                  <h4 class="mb-0 text-dark"> Years in Business </h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="counter-item bg-light rounded p-3 h-100">
+                  <div class="counter-counting">
+                    <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">20</span>
+                    <span class="h1 fw-bold text-primary">+</span>
+                  </div>
+                  <h4 class="mb-0 text-dark">Projects</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="counter-item bg-light rounded p-3 h-100">
+                  <div class="counter-counting">
+                    <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">10</span>
+                    <span class="h1 fw-bold text-primary">+</span>
+                  </div>
+                  <h4 class="mb-0 text-dark">Clients Served</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="counter-item bg-light rounded p-3 h-100">
+                  <div class="counter-counting">
+                    <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">8</span>
+                    <span class="h1 fw-bold text-primary">+</span>
+                  </div>
+                  <h4 class="mb-0 text-dark">Certifications</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+
+ <!-- Team Start -->
+  <div class="container-fluid team py-5">
+    <div class="container py-5">
+      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <h4 class="text-primary">Our Team</h4>
+        <h1 class="display-4 mb-4">Meet Our Expert Team Members</h1>
+        <!-- <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
+      </p> -->
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/Akash.png" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="#" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold">Akash Patel</h4></a>
+              <p class="mb-0">CEO</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/user.jpg" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="#" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold"> Nitin Bhatt </h4></a>
+              <p class="mb-0">Director</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/Tanay.png" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/tanay-parmar-4475056/" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold">Tanay Parmar </h4></a>
+              <p class="mb-0">COO</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/user.jpg" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="#" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold">Ritesh Solanki</h4></a>
+              <p class="mb-0">Microsoft Azure Lead</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/user.jpg" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/venkata-krishna-borra-3903bb248/" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold">Venkata Krishna Borra</h4></a>
+              <p class="mb-0">Sr. Salesforce Developer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/Mohammad.png" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/mohammad-gangardiwala/" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold">Mohammad Gangardi</h4></a>
+              <p class="mb-0">Sr. Salesforce Developer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/Archna.png" class="img-fluid rounded-top w-100" style="border-radius: 75% !important; height:300px !important; width:300px !important;" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/archanasg/" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold"> Archana Reddy </h4></a>
+              <p class="mb-0">Sr. Business Analyst</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/VirajAboutUs.png" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/viraj-gohil/" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold">Viraj Gohil</h4></a>
+              <p class="mb-0">Salesforce Developer</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/Vedavyas.png" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/vedavyas-nitturi-614651213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold"> Nitturi Vedavyas </h4></a>
+              <p class="mb-0">Salesforce Developer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/Hardik.png" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/chauhanhardik7" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold">Hardik Chauhan </h4></a>
+              <p class="mb-0">Salesforce Developer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/Mishruti.png" class="img-fluid rounded-top w-100" style="border-radius: 75% !important; height:300px !important; width:300px !important;" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/mishruti-panchal-b452881ba/" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold"> Mishruti Panchal </h4></a>
+              <p class="mb-0">Business Analyst</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/Bhavisha.png" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/bhavisha-tarachandani-7b120022a/" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold">Bhavisha Tarachandani </h4></a>
+              <p class="mb-0">Business Analyst</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/Shivangi.png" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/shivangipandita/" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold"> Shivangi Pandita </h4></a>
+              <p class="mb-0">Business Analyst</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/Kalpesh.png" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/kalpesh-mahida-778103212/" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold">Kalpesh Mahida </h4></a>
+              <p class="mb-0">Salesforce Developer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/Gautam.png" class="img-fluid rounded-top w-100" style="border-radius: 75% !important; height:300px !important; width:300px !important;" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/gautamshah-datascience/" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold"> Gautam Shah </h4></a>
+              <p class="mb-0">Business Analyst</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/Bankit.png" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/bankitdhameliya/" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold">Bankit Dhameliya</h4></a>
+              <p class="mb-0">Salesforce Developer</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/muskan.png" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/muskan-mawa-911966248/" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold"> Muskan Mawa </h4></a>
+              <p class="mb-0">Business Analyst</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/Nishant.png" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/nishant-viroja/" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold">Nishant Viroja </h4></a>
+              <p class="mb-0">Salesforce Developer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/swet.png" class="img-fluid rounded-top w-100" style="border-radius: 75% !important; height:300px !important; width:300px !important;" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/swetsoni/" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold"> Swet soni </h4></a>
+              <p class="mb-0">Salesforce QA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/Surali.png" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/surali-asodariya-289a85219" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold">Surali Asodariya </h4></a>
+              <p class="mb-0">Salesforce Developer</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="team-item">
+            <div class="team-img">
+              <img src="img/Aksh.png" style="border-radius: 75% !important; height:300px !important; width:300px !important;" class="img-fluid rounded-top w-100" alt="">
+
+            </div>
+            <div class="team-title text-center p-4">
+              <a href="https://www.linkedin.com/in/akshdesai/" target="_blank" aria-label="LinkedIn">
+              <h4 class="mb-0 poppins-semibold"> Aksh Desai </h4></a>
+              <p class="mb-0">Salesforce Developer</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+  <!-- Team End -->
+
+
+  <!-- Footer Start -->
+  <div class="container-fluid footer wow fadeIn" data-wow-delay="0.2s">
+    <div class="container pt-5">
+      <div class="row g-5">
+        <div class="col-xl-12">
+          <div class="mb-5">
+            <div class="row g-4">
+
+              <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                  <a href="index.html" class="p-0">
+                    <h3 class="text-white"> <img src="/img/Footer_Logo.png" style="width: 80px;" alt=""> UCI INDIA</h3>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                  </a>
+                  <p class="text-white mt-2 " style="text-align: justify;">UCI, a certified business, leverages More than 12 years of expertise to deliver innovative IT solutions. We focus on compliance, and quality and service for our clients.</p>
+                 
+                </div>
+              </div>
+
+              <div class=" col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                  <h4 class="text-white mb-4 text-center">Useful Links</h4>
+
+                  <div class="row g-3 text-white mt-1 text-center">
+                    <!-- <div class="col-md-6"> -->
+
+                    <a href="/"><i class="fas fa-angle-right me-2"></i> Home &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a> <br>
+                    <a href="/about.html"><i class="fas fa-angle-right me-2"></i> About Us &nbsp; &nbsp; &nbsp; &nbsp; </a> <br>
+                    <a href="/service.html"><i class="fas fa-angle-right me-2"></i> Services &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a> <br>
+                    <a href="/careers.html"><i class="fas fa-angle-right me-2"></i> Careers &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a> <br>
+                    <!-- </div> -->
+                    <!-- <div class="col-md-6">
+                      <a href="#"><i class="fas fa-angle-right me-2"></i> Microsoft Solutions </a> <br>
+                      <a href="#"><i class="fas fa-angle-right me-2"></i> Careers </a> <br>
+                      <a href="#"><i class="fas fa-angle-right me-2"></i> Contact </a> <br>
+
+                    </div> -->
+                  </div>
+
+                </div>
+              </div>
+
+              <div class=" col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                  <h4 class="text-white mb-4">Useful Links</h4>
+
+                  <div class="row g-3 text-white mt-1">
+                  
+                   
+                    <a href="/Salesforce-Solutions.html"><i class="fas fa-angle-right me-2"></i> Salesforce Solutions </a> <br>
+                    <a href="/Microsoft-Solutions.html"><i class="fas fa-angle-right me-2"></i> Microsoft Solutions </a> <br>
+                    <a href="/contact.html"><i class="fas fa-angle-right me-2"></i> Contact </a> <br>
+
+                    <!-- </div> -->
+                  </div>
+
+
+
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                  <h4 class="mb-4 text-white"> Address </h4>
+
+                  <div class="row g-3 text-white mt-1">
+
+                    <p class="mt-2">
+                      803, Iscon Atria - 2, Besides, Gotri Rd, Gotri, Vadodara, Gujarat 390020, INDIA
+                    </p>
+
+                    <div class="footer-btn d-flex">
+                      <a class="btn btn-md-square rounded-circle me-3" target="_blank" href="https://maps.app.goo.gl/DkjQrEYNrSVCsYSe6"><i class="fas fa-map-marker-alt"></i></a>
+                      <a target="_blank" class="btn btn-md-square rounded-circle me-3" href="mailto:hr@uci-india.com"><i class="fas fa-envelope"></i></a>
+                      <a class="btn btn-md-square rounded-circle me-3" target="_blank" href="https://www.linkedin.com/company/unite-computech-info-india-pvt-ltd/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        
+        </div>
+
+       
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright py-4">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class=" text-center mb-md-0">
+          <span class="text-center text-body text-white"><a href="#" class="border-bottom text-white">Copyright | 2024, UCI-INDIA | &nbsp; All right reserved. Terms and Conditions </a></span>
+         
+        </div>
+     
+      </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
+
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {},
+    Tawk_LoadStart = new Date();
+  (function() {
+    var s1 = document.createElement("script"),
+      s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/6703e574cec6d0125df2bae7/1i9jjgk93';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->
+
+</html>
