@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Trusted IT Services Company in India | UCI India</title>
+  <title>Trusted IT Services Company in India</title>
   <meta name="description" content="UCI India is an IT Services Company offering Microsoft, cloud, and custom software solutions to help enterprises streamline systems and drive growth.">
   <meta name="keywords" content="IT services company, Microsoft solutions, cloud services, custom software development, IT consulting India, enterprise solutions">
   <link href="img/Uci_Logo.png" rel="icon">
@@ -29,7 +29,7 @@
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
   
-  <!-- Enhanced Professional Styles -->
+  <!-- Custom Professional Styles -->
   <style>
     /* Professional Color Palette */
     :root {
@@ -39,63 +39,12 @@
       --text-gray: #666;
       --bg-light: #f8f9fa;
       --bg-white: #ffffff;
-      --bg-section: #f5f7fa;
     }
     
     /* Typography Refinements */
     body {
       font-family: 'DM Sans', sans-serif;
       color: var(--text-dark);
-    }
-    
-    /* Enhanced Navbar Spacing */
-    .nav-bar {
-      background: white;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-    
-    .navbar {
-      padding: 0.75rem 0 !important;
-    }
-    
-    .navbar-nav .nav-link {
-      padding: 0.75rem 1.25rem !important;
-      font-weight: 500;
-      transition: all 0.3s ease;
-    }
-    
-    .navbar-nav .nav-link:hover {
-      color: var(--primary-color) !important;
-    }
-    
-    /* Enhanced Hero Section */
-    .header-banner {
-      background: linear-gradient(135deg, #1a2456 0%, #2B3990 50%, #4e73df 100%) !important;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .header-banner::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="white" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
-      opacity: 0.1;
-    }
-    
-    /* Unified Section Backgrounds */
-    .section-white {
-      background-color: var(--bg-white);
-    }
-    
-    .section-light {
-      background-color: var(--bg-section);
     }
     
     /* Section Headers - Consistent Sizing */
@@ -223,12 +172,6 @@
       opacity: 1;
       transform: scale(1.05);
     }
-    
-    /* Remove extra padding/margin */
-    .py-5 {
-      padding-top: 4rem !important;
-      padding-bottom: 4rem !important;
-    }
   </style>
 </head>
 
@@ -243,51 +186,66 @@
   <!-- Spinner End -->
 
   <!-- Navbar Start -->
-  <div class="container-fluid nav-bar px-0 px-lg-4">
-    <div class="container px-0">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a href="index.html" class="navbar-brand p-0">
-          <h1 class="text-primary mb-0"> <img src="img/Uci_Logo.png" alt="UCI India Logo" style="height: 55px;"> </h1>
+  <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light py-2">
+        <a href="#" class="navbar-brand p-0">
+          <h1 class="text-primary mb-0"> <img src="/img/Uci_Logo.png" alt="" style="height: 65px;"> </h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="fa fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav mx-auto">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="service.html" class="nav-item nav-link">Services</a>
+          <div class="navbar-nav mx-0 mx-lg-auto py-2">
+            <a href="index.html" class="nav-item nav-link active py-2 px-3">Home</a>
+            <a href="about.html" class="nav-item nav-link py-2 px-3">About</a>
+            <a href="service.html" class="nav-item nav-link py-2 px-3">Services</a>
             <div class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Solutions</a>
+              <a href="#" class="nav-link py-2 px-3" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle">Solutions</span>
+              </a>
               <div class="dropdown-menu">
                 <a href="Salesforce-Solutions.html" class="dropdown-item">Salesforce Solutions</a>
                 <a href="Microsoft-Solutions.html" class="dropdown-item">Microsoft Solutions</a>
               </div>
             </div>
-            <a href="careers.html" class="nav-item nav-link">Careers</a>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="careers.html" class="nav-item nav-link py-2 px-3">Careers</a>
+            <a href="contact.html" class="nav-item nav-link py-2 px-3">Contact</a>
           </div>
-          <div class="d-none d-xl-flex align-items-center ps-4">
-            <a target="_blank" href="https://maps.app.goo.gl/DkjQrEYNrSVCsYSe6" class="btn btn-primary rounded-circle me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;" title="Visit our office location">
-              <i class="fas fa-map-marker-alt"></i>
-            </a>
-            <a target="_blank" href="mailto:hr@uci-india.com" class="btn btn-primary rounded-circle me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;" title="Email us">
-              <i class="fas fa-envelope"></i>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/company/unite-computech-info-india-pvt-ltd/" class="btn btn-primary rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;" title="Follow us on LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
+        </div>
+        <div class="d-none d-xl-flex flex-shrink-0 ps-4 align-items-center">
+          <a target="_blank" href="https://maps.app.goo.gl/DkjQrEYNrSVCsYSe6" class="btn btn-primary rounded-circle ms-3 flex-shrink-0" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;"><i class="fas fa-map-marker-alt"></i></a>
+          <a target="_blank" href="mailto:hr@uci-india.com" class="btn btn-primary rounded-circle ms-3 flex-shrink-0" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;"><i class="fas fa-envelope"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/company/unite-computech-info-india-pvt-ltd/" class="btn btn-primary rounded-circle ms-3 flex-shrink-0" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </nav>
     </div>
   </div>
   <!-- Navbar End -->
 
+  <!-- Modal Search Start -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-items-center bg-primary">
+          <div class="input-group w-75 mx-auto d-flex">
+            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Search End -->
+
   <!-- 1. Hero Banner Start -->
-  <div class="header-banner">
+  <div class="header-banner bg-info">
     <div class="container">
-      <div class="row g-4 align-items-center py-5">
+      <div class="row g-4 align-items-center">
         <div class="col-lg-7 animated fadeInLeft">
           <div class="text-md-start py-5">
             <h1 class="display-4 text-white mb-4">Best IT Services Company For Secure and Scalable Solutions</h1>
@@ -299,7 +257,7 @@
         </div>
         <div class="col-lg-5 animated fadeInRight">
           <div class="hero-img" style="object-fit: cover;">
-            <img src="img/Home_Back_Banner.png" class="img-fluid w-100" alt="IT Services Company Banner - UCI India">
+            <img src="img/Home_Back_Banner.png" class="img-fluid w-100" alt="">
           </div>
         </div>
       </div>
@@ -308,7 +266,7 @@
   <!-- Hero Banner End -->
 
   <!-- 2. Helping Businesses Grow (Clients) Start -->
-  <div class="container-fluid py-4 section-white">
+  <div class="container-fluid py-4" style="background-color: #f5f5f5;">
     <div class="container-fluid px-4 py-3">
       <div class="text-center mb-4 wow fadeInUp" data-wow-delay="0.1s">
         <h4 class="text-primary">Helping Businesses Grow with Reliable IT Services</h4>
@@ -344,78 +302,78 @@
         <div class="marquee-wrapper">
           <!-- First set of logos -->
           <div class="marquee-item">
-            <img src="img/Clients/1.png" alt="Client Logo 1 - Government Partner">
+            <img src="img/Clients/1.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/2.png" alt="Client Logo 2 - Enterprise Client">
+            <img src="img/Clients/2.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/3.png" alt="Client Logo 3 - Healthcare Partner">
+            <img src="img/Clients/3.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/4.png" alt="Client Logo 4 - Education Client">
+            <img src="img/Clients/4.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/5.png" alt="Client Logo 5 - Technology Partner">
+            <img src="img/Clients/5.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/6.png" alt="Client Logo 6 - Corporate Client">
+            <img src="img/Clients/6.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/7.png" alt="Client Logo 7 - Business Partner">
+            <img src="img/Clients/7.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/8.png" alt="Client Logo 8 - Industry Client">
+            <img src="img/Clients/8.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/9.png" alt="Client Logo 9 - Service Partner">
+            <img src="img/Clients/9.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/10.png" alt="Client Logo 10 - Strategic Client">
+            <img src="img/Clients/10.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/11.png" alt="Client Logo 11 - Global Partner">
+            <img src="img/Clients/11.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/12.png" alt="Client Logo 12 - Regional Client">
+            <img src="img/Clients/12.png" alt="Client Logo">
           </div>
           
           <!-- Duplicate set for seamless loop -->
           <div class="marquee-item">
-            <img src="img/Clients/1.png" alt="Client Logo 1 - Government Partner">
+            <img src="img/Clients/1.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/2.png" alt="Client Logo 2 - Enterprise Client">
+            <img src="img/Clients/2.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/3.png" alt="Client Logo 3 - Healthcare Partner">
+            <img src="img/Clients/3.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/4.png" alt="Client Logo 4 - Education Client">
+            <img src="img/Clients/4.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/5.png" alt="Client Logo 5 - Technology Partner">
+            <img src="img/Clients/5.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/6.png" alt="Client Logo 6 - Corporate Client">
+            <img src="img/Clients/6.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/7.png" alt="Client Logo 7 - Business Partner">
+            <img src="img/Clients/7.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/8.png" alt="Client Logo 8 - Industry Client">
+            <img src="img/Clients/8.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/9.png" alt="Client Logo 9 - Service Partner">
+            <img src="img/Clients/9.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/10.png" alt="Client Logo 10 - Strategic Client">
+            <img src="img/Clients/10.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/11.png" alt="Client Logo 11 - Global Partner">
+            <img src="img/Clients/11.png" alt="Client Logo">
           </div>
           <div class="marquee-item">
-            <img src="img/Clients/12.png" alt="Client Logo 12 - Regional Client">
+            <img src="img/Clients/12.png" alt="Client Logo">
           </div>
         </div>
       </div>
@@ -424,8 +382,8 @@
   <!-- Helping Businesses Grow End -->
 
   <!-- 3. Who We Are (About) Start -->
-  <div class="container-fluid section-light about py-5">
-    <div class="container py-5">
+  <div class="container-fluid bg-light about pb-5">
+    <div class="container pb-5">
       <div class="row g-5">
         <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
           <div class="about-item-content bg-white rounded p-5 h-100">
@@ -442,7 +400,7 @@
             <div class="row g-4 justify-content-center">
               <div class="col-12">
                 <div class="rounded bg-light">
-                  <img src="img/6308.jpg" class="img-fluid rounded w-100" alt="UCI India Office - IT Services Company">
+                  <img src="img/6308.jpg" class="img-fluid rounded w-100" alt="">
                 </div>
               </div>
               <div class="col-sm-6">
@@ -490,7 +448,7 @@
   <!-- Who We Are End -->
 
   <!-- 4. Advanced IT Services (Feature) Start -->
-  <div class="container-fluid feature section-white py-5">
+  <div class="container-fluid feature bg-light py-5">
     <div class="container py-5">
       <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
         <h4 class="section-subtitle">Advanced IT Services for Your Vision</h4>
@@ -500,7 +458,7 @@
         <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
           <div class="feature-item p-4 pt-0">
             <div class="p-4 text-center">
-              <img src="img/azureLogo.svg" alt="Microsoft Azure Cloud Services - UCI India">
+              <img src="/img/azureLogo.svg" alt="Microsoft Azure">
             </div>
             <h4 class="mb-4 poppins-semibold">1. Microsoft Solutions</h4>
             <p class="mb-4">Drive growth with Microsoft 365, Azure, Power Apps, and Dynamics services designed to support your enterprise development, collaboration, and workflow modernization goals.</p>
@@ -510,7 +468,7 @@
         <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
           <div class="feature-item p-4 pt-0">
             <div class="p-4 text-center">
-              <img src="img/salesforceLogo.svg" alt="Salesforce CRM Solutions - UCI India">
+              <img src="/img/salesforceLogo.svg" alt="Salesforce">
             </div>
             <h4 class="mb-4 poppins-semibold">2. Salesforce Solutions</h4>
             <p class="mb-4">Optimize service delivery with customized Salesforce implementations built for Service Cloud and Gov Cloud designed to streamline CRM and case management systems.</p>
@@ -520,7 +478,7 @@
         <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
           <div class="feature-item p-4 pt-0">
             <div class="p-4 text-center">
-              <img src="img/googleLogo.svg" alt="Google Cloud AI Solutions - UCI India">
+              <img src="/img/googleLogo.svg" alt="Google Cloud">
             </div>
             <h4 class="mb-4 poppins-semibold">3. Google & AI Solutions</h4>
             <p class="mb-4">Increase efficiency with secure Google Workspace, cloud tools, and Gemini-powered automation built to simplify workflows and support business technology solutions across functions.</p>
@@ -530,7 +488,7 @@
         <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.8s">
           <div class="feature-item p-4 pt-0">
             <div class="p-4 text-center">
-              <img src="img/icon1.png" alt="Custom Software Development - UCI India">
+              <img src="/img/icon1.png" alt="System Development">
             </div>
             <h4 class="mb-4 poppins-semibold">4. System Development & DevOps</h4>
             <p class="mb-4">Create custom software using agile DevOps practices, secure implementations pipelines, and smart version control helping businesses scale operations with consistent delivery.</p>
@@ -540,7 +498,7 @@
         <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="1.0s">
           <div class="feature-item p-4 pt-0">
             <div class="p-4 text-center">
-              <img src="img/icon2.png" alt="Cloud Infrastructure Services - UCI India">
+              <img src="/img/icon2.png" alt="Cloud Services">
             </div>
             <h4 class="mb-4 poppins-semibold">5. Cloud Services & Storage</h4>
             <p class="mb-4">Migrate, manage, and scale your infrastructure through flexible cloud platforms that ensure reliability, security, and seamless data storage for growing enterprise needs.</p>
@@ -550,7 +508,7 @@
         <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="1.2s">
           <div class="feature-item p-4 pt-0">
             <div class="p-4 text-center">
-              <img src="img/icon3.png" alt="System Integration Services - UCI India">
+              <img src="/img/icon3.png" alt="System Integration">
             </div>
             <h4 class="mb-4 poppins-semibold">6. System Integrations</h4>
             <p class="mb-4">Build connected IT ecosystems with integrated IT solutions that connect existing systems, third-party platforms, and core infrastructure for smooth enterprise operations.</p>
@@ -563,7 +521,7 @@
   <!-- Advanced IT Services End -->
 
   <!-- 5. Why Choose UCI India Timeline Start -->
-  <div class="container-fluid py-5 section-light">
+  <div class="container-fluid py-5" style="background-color: #f8f9fa;">
     <div class="container py-5">
       <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
         <h4 class="section-subtitle">Why Choose UCI India?</h4>
@@ -616,7 +574,7 @@
           border-radius: 50%;
           transform: translateX(-50%);
           z-index: 2;
-          box-shadow: 0 0 0 4px #f5f7fa;
+          box-shadow: 0 0 0 4px #f8f9fa;
           transition: all 0.3s ease;
         }
         
@@ -730,7 +688,7 @@
   <!-- Why Choose UCI India Timeline End -->
 
   <!-- 6. A Proven Approach Process Start -->
-  <div class="container-fluid py-5 section-white">
+  <div class="container-fluid py-5" style="background-color: #f8f9fa;">
     <div class="container py-5">
       <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
         <h4 class="section-subtitle">A Proven Approach to IT Solutions</h4>
@@ -903,7 +861,7 @@
               <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item">
                   <a href="index.html" class="p-0">
-                    <h3 class="text-white"> <img src="img/Footer_Logo.png" style="width: 80px;" alt="UCI India Footer Logo"> UCI INDIA</h3>
+                    <h3 class="text-white"> <img src="/img/Footer_Logo.png" style="width: 80px;" alt=""> UCI INDIA</h3>
                   </a>
                   <p class="text-white mt-2 " style="text-align: justify;">UCI, a certified business, leverages More than 12 years of expertise to deliver innovative IT solutions. We focus on compliance, and quality and service for our clients.</p>
                 </div>
@@ -913,7 +871,7 @@
                 <div class="footer-item">
                   <h4 class="text-white mb-4 text-center">Useful Links</h4>
                   <div class="row g-3 text-white mt-1 text-center">
-                    <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a> <br>
+                    <a href=""><i class="fas fa-angle-right me-2"></i> Home &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a> <br>
                     <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us &nbsp; &nbsp; &nbsp; &nbsp; </a> <br>
                     <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a> <br>
                     <a href="careers.html"><i class="fas fa-angle-right me-2"></i> Careers &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a> <br>
@@ -925,9 +883,9 @@
                 <div class="footer-item">
                   <h4 class="text-white mb-4">Useful Links</h4>
                   <div class="row g-3 text-white mt-1">
-                    <a href="Salesforce-Solutions.html"><i class="fas fa-angle-right me-2"></i> Salesforce Solutions </a> <br>
-                    <a href="Microsoft-Solutions.html"><i class="fas fa-angle-right me-2"></i> Microsoft Solutions </a> <br>
-                    <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact </a> <br>
+                    <a href="/Salesforce-Solutions.html"><i class="fas fa-angle-right me-2"></i> Salesforce Solutions </a> <br>
+                    <a href="/Microsoft-Solutions.html"><i class="fas fa-angle-right me-2"></i> Microsoft Solutions </a> <br>
+                    <a href="/contact.html"><i class="fas fa-angle-right me-2"></i> Contact </a> <br>
                   </div>
                 </div>
               </div>
@@ -940,9 +898,9 @@
                       803, Iscon Atria - 2, Besides, Gotri Rd, Gotri, Vadodara, Gujarat 390020, INDIA
                     </p>
                     <div class="footer-btn d-flex">
-                      <a class="btn btn-md-square rounded-circle me-3" target="_blank" href="https://maps.app.goo.gl/DkjQrEYNrSVCsYSe6" title="Visit our office"><i class="fas fa-map-marker-alt"></i></a>
-                      <a target="_blank" class="btn btn-md-square rounded-circle me-3" href="mailto:hr@uci-india.com" title="Email us"><i class="fas fa-envelope"></i></a>
-                      <a class="btn btn-md-square rounded-circle me-3" target="_blank" href="https://www.linkedin.com/company/unite-computech-info-india-pvt-ltd/" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                      <a class="btn btn-md-square rounded-circle me-3" target="_blank" href="https://maps.app.goo.gl/DkjQrEYNrSVCsYSe6"><i class="fas fa-map-marker-alt"></i></a>
+                      <a target="_blank" class="btn btn-md-square rounded-circle me-3" href="mailto:hr@uci-india.com"><i class="fas fa-envelope"></i></a>
+                      <a class="btn btn-md-square rounded-circle me-3" target="_blank" href="https://www.linkedin.com/company/unite-computech-info-india-pvt-ltd/"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                   </div>
                 </div>
@@ -969,7 +927,7 @@
   <!-- Copyright End -->
 
   <!-- Back to Top -->
-  <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top" title="Back to top"><i class="fa fa-arrow-up"></i></a>
+  <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
 
   <!-- JavaScript Libraries -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
