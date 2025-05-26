@@ -249,32 +249,100 @@
       }
     }
     
-    /* Feature Items */
+    /* Feature Items - Enhanced Layout with Better Alignment */
     .feature-item {
       background: var(--bg-white);
       border: 1px solid #e9ecef;
       transition: all 0.3s ease;
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 1.5rem;
+      border-radius: 12px;
+      position: relative;
+      min-height: 350px;
     }
     
     .feature-item:hover {
       border-color: var(--primary-color);
-      box-shadow: 0 10px 30px rgba(43, 57, 144, 0.1);
-      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(43, 57, 144, 0.12);
+      transform: translateY(-8px);
+      background: #fbfcfd;
     }
     
+    /* Ensure content areas have consistent spacing */
+    .feature-item .text-center.mb-3 {
+      margin-bottom: 1.5rem !important;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    /* Make content flexible but with consistent minimum height */
     .feature-item h4 {
-      font-size: 1.25rem !important;
-      font-weight: 600 !important;
-      color: var(--text-dark) !important;
-      line-height: 1.4 !important;
-      margin-bottom: 1.25rem !important;
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
     
     .feature-item p {
-      font-size: 1rem !important;
-      color: var(--text-gray) !important;
-      line-height: 1.7 !important;
+      flex-grow: 1;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    
+    /* Align all buttons at bottom */
+    .feature-item .text-center:last-child {
+      margin-top: auto;
+      padding-top: 1rem;
+    }
+    
+    /* Override dark hover effect from original CSS */
+    .feature .feature-item:hover {
+      background: #fbfcfd !important;
+    }
+    
+    .feature .feature-item:hover h4,
+    .feature .feature-item:hover p {
+      color: var(--text-dark) !important;
+    }
+    
+    .feature .feature-item:hover a.btn {
+      background: var(--primary-color) !important;
+      color: var(--bg-white) !important;
+      border-color: var(--primary-color) !important;
+    }
+    
+    .feature .feature-item:hover a.btn:hover {
+      background: var(--secondary-color) !important;
+      color: var(--bg-white) !important;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(43, 57, 144, 0.3);
+    }
+    
+    /* Responsive adjustments for mobile */
+    @media (max-width: 768px) {
+      .feature-item {
+        min-height: 300px;
+        padding: 1.5rem 1rem;
+      }
+      
+      .feature-item .text-center.mb-3 {
+        height: 80px;
+      }
+      
+      .feature-item h4 {
+        min-height: 50px;
+        font-size: 1.1rem !important;
+      }
+      
+      .feature-item p {
+        font-size: 0.95rem !important;
+        margin-bottom: 1.5rem;
+      }
     }
     
     /* Service Icons */
@@ -647,63 +715,75 @@
       </div>
       <div class="row g-4">
         <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-          <div class="feature-item p-4 pt-0">
-            <div class="p-4 text-center">
-              <img src="img/azureLogo.svg" alt="Microsoft Azure Cloud Services - UCI India">
+          <div class="feature-item">
+            <div class="text-center mb-3">
+              <img src="img/azureLogo.svg" alt="Microsoft Azure Cloud Services - UCI India" style="width: 80px; height: 80px; object-fit: contain;">
             </div>
-            <h4 class="mb-4 poppins-semibold">1. Microsoft Solutions</h4>
-            <p class="mb-4">Drive growth with Microsoft 365, Azure, Power Apps, and Dynamics services designed to support your enterprise development, collaboration, and workflow modernization goals.</p>
-            <a class="btn btn-primary rounded-pill py-2 px-4" href="Microsoft-Solutions.html">Discover More</a>
+            <h4 class="mb-3 poppins-semibold text-center">1. Microsoft Solutions</h4>
+            <p class="text-center">Drive growth with Microsoft 365, Azure, Power Apps, and Dynamics services designed to support your enterprise development, collaboration, and workflow modernization goals.</p>
+            <div class="text-center">
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="Microsoft-Solutions.html">Discover More</a>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
-          <div class="feature-item p-4 pt-0">
-            <div class="p-4 text-center">
-              <img src="img/salesforceLogo.svg" alt="Salesforce CRM Solutions - UCI India">
+          <div class="feature-item">
+            <div class="text-center mb-3">
+              <img src="img/salesforceLogo.svg" alt="Salesforce CRM Solutions - UCI India" style="width: 80px; height: 80px; object-fit: contain;">
             </div>
-            <h4 class="mb-4 poppins-semibold">2. Salesforce Solutions</h4>
-            <p class="mb-4">Optimize service delivery with customized Salesforce implementations built for Service Cloud and Gov Cloud designed to streamline CRM and case management systems.</p>
-            <a class="btn btn-primary rounded-pill py-2 px-4" href="Salesforce-Solutions.html">Discover More</a>
+            <h4 class="mb-3 poppins-semibold text-center">2. Salesforce Solutions</h4>
+            <p class="text-center">Optimize service delivery with customized Salesforce implementations built for Service Cloud and Gov Cloud designed to streamline CRM and case management systems.</p>
+            <div class="text-center">
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="Salesforce-Solutions.html">Discover More</a>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
-          <div class="feature-item p-4 pt-0">
-            <div class="p-4 text-center">
-              <img src="img/googleLogo.svg" alt="Google Cloud AI Solutions - UCI India">
+          <div class="feature-item">
+            <div class="text-center mb-3">
+              <img src="img/googleLogo.svg" alt="Google Cloud AI Solutions - UCI India" style="width: 80px; height: 80px; object-fit: contain;">
             </div>
-            <h4 class="mb-4 poppins-semibold">3. Google & AI Solutions</h4>
-            <p class="mb-4">Increase efficiency with secure Google Workspace, cloud tools, and Gemini-powered automation built to simplify workflows and support business technology solutions across functions.</p>
-            <a class="btn btn-primary rounded-pill py-2 px-4" href="service.html">Discover More</a>
+            <h4 class="mb-3 poppins-semibold text-center">3. Google & AI Solutions</h4>
+            <p class="text-center">Increase efficiency with secure Google Workspace, cloud tools, and Gemini-powered automation built to simplify workflows and support business technology solutions across functions.</p>
+            <div class="text-center">
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="service.html">Discover More</a>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.8s">
-          <div class="feature-item p-4 pt-0">
-            <div class="p-4 text-center">
-              <img src="img/icon1.png" alt="Custom Software Development - UCI India">
+          <div class="feature-item">
+            <div class="text-center mb-3">
+              <img src="img/icon1.png" alt="Custom Software Development - UCI India" style="width: 80px; height: 80px; object-fit: contain;">
             </div>
-            <h4 class="mb-4 poppins-semibold">4. System Development & DevOps</h4>
-            <p class="mb-4">Create custom software using agile DevOps practices, secure implementations pipelines, and smart version control helping businesses scale operations with consistent delivery.</p>
-            <a class="btn btn-primary rounded-pill py-2 px-4" href="service.html">Discover More</a>
+            <h4 class="mb-3 poppins-semibold text-center">4. System Development & DevOps</h4>
+            <p class="text-center">Create custom software using agile DevOps practices, secure implementations pipelines, and smart version control helping businesses scale operations with consistent delivery.</p>
+            <div class="text-center">
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="service.html">Discover More</a>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="1.0s">
-          <div class="feature-item p-4 pt-0">
-            <div class="p-4 text-center">
-              <img src="img/icon2.png" alt="Cloud Infrastructure Services - UCI India">
+          <div class="feature-item">
+            <div class="text-center mb-3">
+              <img src="img/icon2.png" alt="Cloud Infrastructure Services - UCI India" style="width: 80px; height: 80px; object-fit: contain;">
             </div>
-            <h4 class="mb-4 poppins-semibold">5. Cloud Services & Storage</h4>
-            <p class="mb-4">Migrate, manage, and scale your infrastructure through flexible cloud platforms that ensure reliability, security, and seamless data storage for growing enterprise needs.</p>
-            <a class="btn btn-primary rounded-pill py-2 px-4" href="service.html">Discover More</a>
+            <h4 class="mb-3 poppins-semibold text-center">5. Cloud Services & Storage</h4>
+            <p class="text-center">Migrate, manage, and scale your infrastructure through flexible cloud platforms that ensure reliability, security, and seamless data storage for growing enterprise needs.</p>
+            <div class="text-center">
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="service.html">Discover More</a>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="1.2s">
-          <div class="feature-item p-4 pt-0">
-            <div class="p-4 text-center">
-              <img src="img/icon3.png" alt="System Integration Services - UCI India">
+          <div class="feature-item">
+            <div class="text-center mb-3">
+              <img src="img/icon3.png" alt="System Integration Services - UCI India" style="width: 80px; height: 80px; object-fit: contain;">
             </div>
-            <h4 class="mb-4 poppins-semibold">6. System Integrations</h4>
-            <p class="mb-4">Build connected IT ecosystems with integrated IT solutions that connect existing systems, third-party platforms, and core infrastructure for smooth enterprise operations.</p>
-            <a class="btn btn-primary rounded-pill py-2 px-4" href="service.html">Discover More</a>
+            <h4 class="mb-3 poppins-semibold text-center">6. System Integrations</h4>
+            <p class="text-center">Build connected IT ecosystems with integrated IT solutions that connect existing systems, third-party platforms, and core infrastructure for smooth enterprise operations.</p>
+            <div class="text-center">
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="service.html">Discover More</a>
+            </div>
           </div>
         </div>
       </div>
@@ -887,138 +967,67 @@
       </div>
       
       <style>
-        .process-card {
-          background: white;
-          border-radius: 15px;
-          padding: 30px;
-          height: 100%;
-          box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-          border: 1px solid #e9ecef;
-          transition: all 0.3s ease;
-          position: relative;
-          overflow: hidden;
-        }
-        
-        .process-card::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 4px;
-          background: linear-gradient(90deg, #2B3990, #4e73df);
-          transform: scaleX(0);
-          transform-origin: left;
-          transition: transform 0.3s ease;
-        }
-        
-        .process-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-          border-color: #2B3990;
-        }
-        
-        .process-card:hover::before {
-          transform: scaleX(1);
-        }
-        
-        .process-number {
-          width: 50px;
-          height: 50px;
-          background: linear-gradient(45deg, #2B3990, #4e73df);
-          color: white;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 20px;
-          font-weight: bold;
-          margin-bottom: 20px;
-          box-shadow: 0 4px 15px rgba(43, 57, 144, 0.3);
-        }
-        
-        .process-card h4 {
-          color: #2B3990 !important;
-          font-size: 1.25rem !important;
-          font-weight: 600 !important;
-          margin-bottom: 15px !important;
-          line-height: 1.4 !important;
-        }
-        
-        .process-card p {
-          color: #666 !important;
-          font-size: 1rem !important;
-          line-height: 1.7 !important;
-          margin: 0 !important;
-        }
-        
-        .process-connector {
-          position: absolute;
-          top: 25px;
-          right: -30px;
-          width: 60px;
-          height: 2px;
-          background: #e9ecef;
-          z-index: 1;
-        }
-        
-        @media (max-width: 991px) {
-          .process-connector {
-            display: none;
-          }
-        }
+        /* No additional styles needed - using default feature-item styling */
       </style>
       
       <div class="row g-4">
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="process-card">
-            <div class="process-number">1</div>
-            <h4>Discovery & Define</h4>
-            <p>We begin with a detailed consultation to understand your business needs, processes, and goals. This helps us identify your current systems and the right approach for your requirements.</p>
-            <div class="process-connector d-none d-lg-block"></div>
+          <div class="feature-item">
+            <h4 class="mb-3 poppins-semibold text-center">1. Discovery & Define</h4>
+            <p class="text-center">We begin with a detailed consultation to understand your business needs, processes, and goals. This helps us identify your current systems and the right approach for your requirements.</p>
+            <div class="text-center">
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="contact.html">Get Started</a>
+            </div>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-          <div class="process-card">
-            <div class="process-number">2</div>
-            <h4>Solution & Planning</h4>
-            <p>Based on your objectives, we create a customized plan that outlines the solution, timeline, responsibilities, and success criteria. This step sets clear expectations from the start.</p>
-            <div class="process-connector d-none d-lg-block"></div>
+          <div class="feature-item">
+            <h4 class="mb-3 poppins-semibold text-center">2. Solution & Planning</h4>
+            <p class="text-center">Based on your objectives, we create a customized plan that outlines the solution, timeline, responsibilities, and success criteria. This step sets clear expectations from the start.</p>
+            <div class="text-center">
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="contact.html">Get Started</a>
+            </div>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="process-card">
-            <div class="process-number">3</div>
-            <h4>Development & Integration</h4>
-            <p>We build reliable, secure systems using proven methods. The new solution blends smoothly with your existing setup making sure all parts work together efficiently.</p>
+          <div class="feature-item">
+            <h4 class="mb-3 poppins-semibold text-center">3. Development & Integration</h4>
+            <p class="text-center">We build reliable, secure systems using proven methods. The new solution blends smoothly with your existing setup making sure all parts work together efficiently.</p>
+            <div class="text-center">
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="contact.html">Get Started</a>
+            </div>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-          <div class="process-card">
-            <div class="process-number">4</div>
-            <h4>Testing & Quality Assurance</h4>
-            <p>We conduct thorough testing to check performance, security, and functionality. This helps prevent future issues and confirms your systems work as intended.</p>
-            <div class="process-connector d-none d-lg-block"></div>
+          <div class="feature-item">
+            <h4 class="mb-3 poppins-semibold text-center">4. Testing & Quality Assurance</h4>
+            <p class="text-center">We conduct thorough testing to check performance, security, and functionality. This helps prevent future issues and confirms your systems work as intended.</p>
+            <div class="text-center">
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="contact.html">Get Started</a>
+            </div>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-          <div class="process-card">
-            <div class="process-number">5</div>
-            <h4>Implementation & Guidance</h4>
-            <p>We launch the solution with minimal interruption to your business. Your team receives full onboarding and easy-to-follow documentation to get up to speed quickly.</p>
-            <div class="process-connector d-none d-lg-block"></div>
+          <div class="feature-item">
+            <h4 class="mb-3 poppins-semibold text-center">5. Implementation & Guidance</h4>
+            <p class="text-center">We launch the solution with minimal interruption to your business. Your team receives full onboarding and easy-to-follow documentation to get up to speed quickly.</p>
+            <div class="text-center">
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="contact.html">Get Started</a>
+            </div>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-          <div class="process-card">
-            <div class="process-number">6</div>
-            <h4>Long-Term Support & Updates</h4>
-            <p>After implementation, we continue to monitor, maintain, and improve your systems. We make necessary updates to keep your operations running smoothly.</p>
+          <div class="feature-item">
+            <h4 class="mb-3 poppins-semibold text-center">6. Long-Term Support & Updates</h4>
+            <p class="text-center">After implementation, we continue to monitor, maintain, and improve your systems. We make necessary updates to keep your operations running smoothly.</p>
+            <div class="text-center">
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="contact.html">Get Started</a>
+            </div>
           </div>
         </div>
       </div>
