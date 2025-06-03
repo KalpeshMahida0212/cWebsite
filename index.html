@@ -155,8 +155,6 @@
       font-weight: 600 !important;
       color: var(--primary-color) !important;
       margin-bottom: 1.25rem !important;
-      text-transform: uppercase !important;
-      letter-spacing: 1px !important;
       line-height: 1.3 !important;
     }
     
@@ -168,8 +166,6 @@
     .about-item-content h2 {
       font-size: 1.1rem !important;
       font-weight: 600 !important;
-      text-transform: uppercase !important;
-      letter-spacing: 1px !important;
       margin-bottom: 1.5rem !important;
       color: var(--primary-color) !important;
     }
@@ -284,18 +280,18 @@
       min-height: 60px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      text-align: center;
     }
     
     .feature-item p {
       flex-grow: 1;
       margin-bottom: 2rem;
       line-height: 1.6;
+      text-align: left;
     }
     
     /* Align all buttons at bottom */
-    .feature-item .text-center:last-child {
+    .feature-item .text-center:last-child,
+    .feature-item .text-left:last-child {
       margin-top: auto;
       padding-top: 1rem;
     }
@@ -719,9 +715,9 @@
             <div class="text-center mb-3">
               <img src="img/azureLogo.svg" alt="Microsoft Azure Cloud Services - UCI India" style="width: 80px; height: 80px; object-fit: contain;">
             </div>
-            <h4 class="mb-3 poppins-semibold text-center">1. Microsoft Solutions</h4>
-            <p class="text-center">Drive growth with Microsoft 365, Azure, Power Apps, and Dynamics services designed to support your enterprise development, collaboration, and workflow modernization goals.</p>
-            <div class="text-center">
+            <h4 class="mb-3 poppins-semibold">1. Microsoft Solutions</h4>
+            <p>Drive growth with Microsoft 365, Azure, Power Apps, and Dynamics services designed to support your enterprise development, collaboration, and workflow modernization goals.</p>
+            <div class="text-left">
               <a class="btn btn-primary rounded-pill py-2 px-4" href="Microsoft-Solutions.html">Discover More</a>
             </div>
           </div>
@@ -731,9 +727,9 @@
             <div class="text-center mb-3">
               <img src="img/salesforceLogo.svg" alt="Salesforce CRM Solutions - UCI India" style="width: 80px; height: 80px; object-fit: contain;">
             </div>
-            <h4 class="mb-3 poppins-semibold text-center">2. Salesforce Solutions</h4>
-            <p class="text-center">Optimize service delivery with customized Salesforce implementations built for Service Cloud and Gov Cloud designed to streamline CRM and case management systems.</p>
-            <div class="text-center">
+            <h4 class="mb-3 poppins-semibold">2. Salesforce Solutions</h4>
+            <p>Optimize service delivery with customized Salesforce implementations built for Service Cloud and Gov Cloud designed to streamline CRM and case management systems.</p>
+            <div class="text-left">
               <a class="btn btn-primary rounded-pill py-2 px-4" href="Salesforce-Solutions.html">Discover More</a>
             </div>
           </div>
@@ -743,9 +739,9 @@
             <div class="text-center mb-3">
               <img src="img/googleLogo.svg" alt="Google Cloud AI Solutions - UCI India" style="width: 80px; height: 80px; object-fit: contain;">
             </div>
-            <h4 class="mb-3 poppins-semibold text-center">3. Google & AI Solutions</h4>
-            <p class="text-center">Increase efficiency with secure Google Workspace, cloud tools, and Gemini-powered automation built to simplify workflows and support business technology solutions across functions.</p>
-            <div class="text-center">
+            <h4 class="mb-3 poppins-semibold">3. Google & AI Solutions</h4>
+            <p>Increase efficiency with secure Google Workspace, cloud tools, and Gemini-powered automation built to simplify workflows and support business technology solutions across functions.</p>
+            <div class="text-left">
               <a class="btn btn-primary rounded-pill py-2 px-4" href="service.html">Discover More</a>
             </div>
           </div>
@@ -755,9 +751,9 @@
             <div class="text-center mb-3">
               <img src="img/icon1.png" alt="Custom Software Development - UCI India" style="width: 80px; height: 80px; object-fit: contain;">
             </div>
-            <h4 class="mb-3 poppins-semibold text-center">4. System Development & DevOps</h4>
-            <p class="text-center">Create custom software using agile DevOps practices, secure implementations pipelines, and smart version control helping businesses scale operations with consistent delivery.</p>
-            <div class="text-center">
+            <h4 class="mb-3 poppins-semibold">4. System Development & DevOps</h4>
+            <p>Create custom software using agile DevOps practices, secure implementations pipelines, and smart version control helping businesses scale operations with consistent delivery.</p>
+            <div class="text-left">
               <a class="btn btn-primary rounded-pill py-2 px-4" href="service.html">Discover More</a>
             </div>
           </div>
@@ -767,9 +763,9 @@
             <div class="text-center mb-3">
               <img src="img/icon2.png" alt="Cloud Infrastructure Services - UCI India" style="width: 80px; height: 80px; object-fit: contain;">
             </div>
-            <h4 class="mb-3 poppins-semibold text-center">5. Cloud Services & Storage</h4>
-            <p class="text-center">Migrate, manage, and scale your infrastructure through flexible cloud platforms that ensure reliability, security, and seamless data storage for growing enterprise needs.</p>
-            <div class="text-center">
+            <h4 class="mb-3 poppins-semibold">5. Cloud Services & Storage</h4>
+            <p>Migrate, manage, and scale your infrastructure through flexible cloud platforms that ensure reliability, security, and seamless data storage for growing enterprise needs.</p>
+            <div class="text-left">
               <a class="btn btn-primary rounded-pill py-2 px-4" href="service.html">Discover More</a>
             </div>
           </div>
@@ -779,9 +775,9 @@
             <div class="text-center mb-3">
               <img src="img/icon3.png" alt="System Integration Services - UCI India" style="width: 80px; height: 80px; object-fit: contain;">
             </div>
-            <h4 class="mb-3 poppins-semibold text-center">6. System Integrations</h4>
-            <p class="text-center">Build connected IT ecosystems with integrated IT solutions that connect existing systems, third-party platforms, and core infrastructure for smooth enterprise operations.</p>
-            <div class="text-center">
+            <h4 class="mb-3 poppins-semibold">6. System Integrations</h4>
+            <p>Build connected IT ecosystems with integrated IT solutions that connect existing systems, third-party platforms, and core infrastructure for smooth enterprise operations.</p>
+            <div class="text-left">
               <a class="btn btn-primary rounded-pill py-2 px-4" href="service.html">Discover More</a>
             </div>
           </div>
