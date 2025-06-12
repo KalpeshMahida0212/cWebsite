@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Join the Team at UCI India Careers</title>
-  <meta name="description" content="Discover UCI India careers that offer real growth in Salesforce, UI/UX, cloud, and creative roles. Join a people-first workplace and build a meaningful, future-ready career.">
-  <meta name="keywords" content="UCI India Careers">
+  <title>Google and AI Solutions for smart automation and collaboration</title>
+  <meta name="description" content="Explore Google and AI solutions including workspace deployment, GCP services, predictive analytics, and chatbot development to optimize workflows and activate business growth.">
+  <meta name="keywords" content="Google and AI solutions">
   <link href="img/Uci_Logo.png" rel="icon">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -40,6 +40,10 @@
       --bg-light: #f8f9fa;
       --bg-white: #ffffff;
       --bg-section: #f5f7fa;
+      --google-blue: #4285f4;
+      --google-green: #34a853;
+      --google-yellow: #fbbc05;
+      --google-red: #ea4335;
     }
     
     /* Typography Refinements */
@@ -136,7 +140,13 @@
       margin-bottom: 1.25rem !important;
     }
     
-    /* Feature Items Enhanced - Career Opportunities */
+    /* Google Brand Colors for Icons */
+    .google-icon-1 { color: var(--google-blue) !important; }
+    .google-icon-2 { color: var(--google-green) !important; }
+    .google-icon-3 { color: var(--google-yellow) !important; }
+    .google-icon-4 { color: var(--google-red) !important; }
+    
+    /* Feature Items Enhanced */
     .feature-item {
       background: var(--bg-white);
       padding: 2.5rem;
@@ -146,7 +156,7 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-      min-height: 450px;
+      min-height: 350px;
     }
     
     .feature-item:hover {
@@ -155,7 +165,7 @@
       background: var(--bg-white) !important;
     }
     
-    /* Override any existing feature hover styles */
+    /* Override template's feature hover effects */
     .feature .feature-item:hover {
       background: var(--bg-white) !important;
       transform: translateY(-5px) !important;
@@ -164,13 +174,7 @@
     }
     
     .feature .feature-item:hover h4,
-    .feature .feature-item:hover p,
-    .feature .feature-item:hover .requirements,
-    .feature .feature-item:hover .requirements li {
-      color: var(--text-dark) !important;
-    }
-    
-    .feature .feature-item:hover .requirements strong {
+    .feature .feature-item:hover p {
       color: var(--text-dark) !important;
     }
     
@@ -180,6 +184,7 @@
       color: white !important;
     }
     
+    /* Icon styling */
     .feature-item .feature-icon {
       margin-bottom: 1.5rem;
       height: 80px;
@@ -189,47 +194,34 @@
     }
     
     .feature-item .feature-icon i {
-      color: var(--primary-color) !important;
       transition: none !important;
-    }
-    
-    .feature-item:hover .feature-icon i {
-      color: var(--primary-color) !important;
       transform: none !important;
     }
     
-    /* COMPLETE OVERRIDE - Remove all feature icon hover effects */
+    .feature-item:hover .feature-icon i {
+      transform: none !important;
+    }
+    
+    /* Override template's feature-icon effects */
     .feature .feature-item .feature-icon i {
-      color: var(--primary-color) !important;
       transition: none !important;
       transform: none !important;
     }
     
     .feature .feature-item:hover .feature-icon i {
-      color: var(--primary-color) !important;
       transition: none !important;
       transform: none !important;
       z-index: auto !important;
     }
     
-    /* Override template's feature-icon pseudo-element effects */
     .feature .feature-item .feature-icon::after {
       display: none !important;
-      content: none !important;
-      background: none !important;
-      height: 0 !important;
-      transition: none !important;
     }
     
     .feature .feature-item:hover .feature-icon::after {
       display: none !important;
-      content: none !important;
-      background: none !important;
-      height: 0 !important;
-      transition: none !important;
     }
     
-    /* Ensure feature-icon background stays consistent */
     .feature .feature-item .feature-icon {
       background: none !important;
       border-radius: 0 !important;
@@ -243,7 +235,6 @@
     
     .feature .feature-item:hover .feature-icon {
       background: none !important;
-      color: var(--primary-color) !important;
     }
     
     .feature-item h4 {
@@ -259,32 +250,9 @@
     .feature-item p {
       text-align: left;
       line-height: 1.6;
-      margin-bottom: 1rem;
-      color: var(--text-gray) !important;
-    }
-    
-    .feature-item .requirements {
-      flex-grow: 1;
       margin-bottom: 2rem;
-    }
-    
-    .feature-item .requirements strong {
-      color: var(--text-dark) !important;
-      font-weight: 600;
-      display: block;
-      margin-bottom: 0.5rem;
-    }
-    
-    .feature-item .requirements ul {
-      margin: 0;
-      padding-left: 1.2rem;
-      text-align: left;
-    }
-    
-    .feature-item .requirements ul li {
-      margin-bottom: 0.5rem;
-      line-height: 1.5;
       color: var(--text-gray) !important;
+      flex-grow: 1;
     }
     
     .feature-item .btn {
@@ -295,28 +263,40 @@
       color: white !important;
     }
     
-    /* Why Work Section */
-    .why-work-section {
-      background: var(--bg-section);
-      padding: 5rem 0;
-    }
-    
-    .why-work-item {
+    /* Benefits Section */
+    .benefits-item {
       background: var(--bg-white);
-      padding: 2.5rem;
+      padding: 2rem;
       border-radius: 12px;
       box-shadow: 0 5px 20px rgba(0,0,0,0.08);
       transition: all 0.3s ease;
       height: 100%;
+      margin-bottom: 2rem;
     }
     
-    .why-work-item:hover {
+    .benefits-item:hover {
       transform: translateY(-5px);
       box-shadow: 0 15px 35px rgba(0,0,0,0.12);
     }
     
-    /* Hiring Process */
-    .process-item {
+    .benefits-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .benefits-icon i {
+      color: white;
+      font-size: 1.5rem;
+    }
+    
+    /* How We Work Section */
+    .work-process-item {
       background: var(--bg-white);
       padding: 2rem;
       border-radius: 12px;
@@ -327,7 +307,7 @@
       margin-bottom: 2rem;
     }
     
-    .process-item:hover {
+    .work-process-item:hover {
       transform: translateX(10px);
       box-shadow: 0 10px 30px rgba(0,0,0,0.12);
     }
@@ -343,19 +323,37 @@
       justify-content: center;
       font-weight: bold;
       margin-bottom: 1rem;
+      font-size: 1.1rem;
     }
     
-    /* Life at UCI */
-    .life-section {
+    /* CTA Section */
+    .cta-section {
       background: linear-gradient(135deg, #2B3990 0%, #4e73df 100%);
       color: white;
       padding: 5rem 0;
     }
     
-    .life-section h2,
-    .life-section h3,
-    .life-section p {
+    .cta-section h2,
+    .cta-section h3,
+    .cta-section p {
       color: white !important;
+    }
+    
+    .cta-section .btn-light {
+      background: white;
+      color: var(--primary-color);
+      border: none;
+      font-weight: 600;
+      padding: 12px 30px;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+    
+    .cta-section .btn-light:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(255,255,255,0.3);
+      background: #f8f9fa !important;
+      color: var(--primary-color) !important;
     }
     
     /* Buttons */
@@ -388,25 +386,15 @@
         font-size: 1.15rem !important;
       }
       .feature-item {
-        min-height: 400px;
+        min-height: 300px;
         padding: 2rem 1.5rem;
-      }
-      .feature-item .feature-icon {
-        height: 70px;
-        justify-content: flex-start;
       }
       .feature-item h4 {
         min-height: 50px;
         font-size: 1.1rem !important;
-        text-align: left;
-        justify-content: flex-start;
       }
-      .feature-item p,
-      .feature-item .requirements ul {
-        text-align: left;
-      }
-      .why-work-item,
-      .process-item {
+      .benefits-item,
+      .work-process-item {
         padding: 1.5rem;
       }
     }
@@ -445,9 +433,10 @@
               <div class="dropdown-menu">
                 <a href="Salesforce-Solutions.html" class="dropdown-item">Salesforce Solutions</a>
                 <a href="Microsoft-Solutions.html" class="dropdown-item">Microsoft Solutions</a>
+                <a href="Google-AI-Solutions.html" class="dropdown-item active">Google & AI Solutions</a>
               </div>
             </div>
-            <a href="careers.html" class="nav-item nav-link active">Careers</a>
+            <a href="careers.html" class="nav-item nav-link">Careers</a>
             <a href="contact.html" class="nav-item nav-link">Contact</a>
           </div>
         </div>
@@ -464,199 +453,210 @@
   <!-- Header Start -->
   <div class="container-fluid bg-breadcrumb">
     <div class="container text-center py-5" style="max-width: 900px;">
-      <h1 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Build Your Future with UCI</h1>
+      <h1 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Google & AI Solutions</h1>
       <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item navlink text-primary">Careers</li>
+        <li class="breadcrumb-item"><a href="#" onclick="return false;">Solutions</a></li>
+        <li class="breadcrumb-item navlink text-primary">Google & AI Solutions</li>
       </ol>
     </div>
   </div>
   <!-- Header End -->
 
-  <!-- Main Career Content Start -->
+  <!-- Hero Section Start -->
   <div class="container-fluid section-white py-5">
     <div class="container py-5">
-      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 900px;">
-        <h3 class="text-primary">Join a forward-thinking team that's reshaping technology and design</h3>
-        <h2 class="display-5 mb-4">Explore Meaningful Career Opportunities</h2>
-        <p class="mb-0">We develop talent, encourage growth, and work on meaningful projects across salesforce development, UI/UX, cloud technologies, and creative solutions. Join our dynamic team where your work matters and your growth is our priority.</p>
-      </div>
-    </div>
-  </div>
-  <!-- Main Career Content End -->
-
-  <!-- Why Work With Us Start -->
-  <div class="why-work-section">
-    <div class="container py-5">
-      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-        <h2 class="section-title">Why Work with Us</h2>
-        <h3 class="section-subtitle">Make an Impact. Grow with Us.</h3>
-      </div>
-      <div class="row g-4">
+      <div class="row align-items-center">
         <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
-          <div class="why-work-item">
-            <h4 class="mb-4">Your Work Matters</h4>
-            <p>You are not just taking up a job, you're stepping into a place where your work matters. We believe in creating an environment where people feel valued, supported, and encouraged to grow.</p>
-            <p>Our teams work closely together, sharing ideas and solving problems as one. You'll have the chance to learn new skills, take on meaningful projects, and work with people who care about what they do.</p>
-          </div>
+          <h3 class="text-primary">Smarter Work Starts with Google & AI Solutions</h3>
+          <h2 class="display-5 mb-4">Intelligent Tools for Modern Business</h2>
+          <p class="mb-4">Support your business with intelligent tools from Google and AI technologies. From smarter collaboration in Google workspace to predictive insights and AI automation. We build solutions that help your team work faster, make better decisions, and innovate with confidence.</p>
+          <a href="contact.html" class="btn btn-primary rounded-pill py-3 px-5">Talk to Our Experts</a>
         </div>
         <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
-          <div class="why-work-item">
-            <h4 class="mb-4">Build a Career You Can Be Proud Of</h4>
-            <p>Your growth is important to us, and we're here to help you build a career that you can be proud of. We offer more than just jobs; we offer careers where people can learn, contribute, and be part of something bigger.</p>
-            <p>We are building a team of driven professionals who are passionate about their work and eager to grow in cutting-edge fields like technology and design.</p>
+          <div class="text-center">
+            <img src="img/googleLogo.svg" class="img-fluid" alt="Google & AI Solutions - UCI India" style="max-height: 300px; object-fit: contain;">
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Why Work With Us End -->
+  <!-- Hero Section End -->
 
-  <!-- Career Opportunities Start -->
+  <!-- Benefits Section Start -->
+  <div class="container-fluid section-light py-5">
+    <div class="container py-5">
+      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <h2 class="section-title">Google & AI Solutions for Next-Level Business Performance</h2>
+        <h3 class="section-subtitle">Transform how your team works with intelligent, integrated solutions</h3>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
+          <div class="benefits-item">
+            <div class="benefits-icon">
+              <i class="fas fa-puzzle-piece"></i>
+            </div>
+            <h4 class="mb-3">Merge Your Work Tools</h4>
+            <p>Combine email, documents, meetings, and storage into a single platform to reduce confusion and improve team collaboration quickly.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="0.3s">
+          <div class="benefits-item">
+            <div class="benefits-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h4 class="mb-3">Make Decisions Faster</h4>
+            <p>Use clear reports and alerts to identify trends, resolve issues early, and keep projects moving on schedule without delays.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="0.4s">
+          <div class="benefits-item">
+            <div class="benefits-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h4 class="mb-3">Cut Time on Routine Tasks</h4>
+            <p>Automate repetitive tasks like approvals, notifications, and reporting so your team can focus on higher-value, strategic work.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="0.5s">
+          <div class="benefits-item">
+            <div class="benefits-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h4 class="mb-3">Match Your Needs</h4>
+            <p>Customize tools and workflows to align with your company's goals, industry requirements, and daily operations for the best results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Benefits Section End -->
+
+  <!-- Services Section Start -->
   <div class="container-fluid feature section-white py-5">
     <div class="container py-5">
       <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-        <h2 class="section-title">Career Opportunities</h2>
-        <h3 class="section-subtitle">Explore meaningful career opportunities with us</h3>
+        <h2 class="section-title">What We Offer Under Google & AI Solutions</h2>
+        <h3 class="section-subtitle">Comprehensive Google and AI services to transform your business operations</h3>
       </div>
       <div class="row g-4">
         <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
           <div class="feature-item">
             <div class="feature-icon">
-              <i class="fa fa-brands fa-salesforce fa-3x"></i>
+              <i class="fab fa-google fa-3x google-icon-1"></i>
             </div>
-            <h4>Salesforce Developer</h4>
-            <p>Salesforce Developer with hands-on experience in Apex, Lightning Web Components (LWC), Visualforce, and Community Cloud. The ideal candidate should be comfortable working on platform customizations, integrating third-party systems, and ensuring code quality through proper testing practices.</p>
-            <div class="requirements">
-              <strong>Key Requirements:</strong>
-              <ul>
-                <li>Strong understanding of Salesforce integrations and REST APIs</li>
-                <li>Experience with unit testing and maintaining test coverage</li>
-                <li>Familiarity with Salesforce DX and version control using Git</li>
-                <li>Salesforce certifications (Developer I/II) are strongly preferred</li>
-              </ul>
-            </div>
-            <a href="applicationForm.html" target="_blank" class="btn btn-primary rounded-pill py-2 px-4">Apply Now</a>
+            <h4>Google Workspace Deployment</h4>
+            <p>Set up Gmail, Docs, Meet, and Drive across your team. We handle full migration, permissions, and training so your organization runs smoothly with tools built for effortless collaboration.</p>
+            <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4">Learn More</a>
           </div>
         </div>
         <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
           <div class="feature-item">
             <div class="feature-icon">
-              <i class="fa fa-paint-brush fa-3x"></i>
+              <i class="fas fa-cloud fa-3x google-icon-2"></i>
             </div>
-            <h4>UI/UX Designer</h4>
-            <p>UI/UX Designer with expertise in Figma, user research, wireframing, and prototyping. The role involves crafting intuitive, user-centered designs while ensuring consistency and functionality across different platforms and devices.</p>
-            <div class="requirements">
-              <strong>Key Requirements:</strong>
-              <ul>
-                <li>Proficiency in responsive design and understanding of accessibility standards</li>
-                <li>Experience collaborating with cross-functional teams</li>
-                <li>Familiarity with design systems</li>
-                <li>Basic knowledge of HTML, CSS, and JavaScript is a plus</li>
-              </ul>
-            </div>
-            <a href="applicationForm.html" target="_blank" class="btn btn-primary rounded-pill py-2 px-4">Apply Now</a>
+            <h4>Google Cloud Platform (GCP) Services</h4>
+            <p>Design secure, flexible cloud environments for app hosting, data storage, and scalable computing. We build and manage GCP setups that lower costs, increase uptime, and support long-term business growth.</p>
+            <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4">Learn More</a>
           </div>
         </div>
         <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
           <div class="feature-item">
             <div class="feature-icon">
-              <i class="fa fa-brands fa-microsoft fa-3x"></i>
+              <i class="fas fa-map-marked-alt fa-3x google-icon-3"></i>
             </div>
-            <h4>Microsoft Azure Specialist</h4>
-            <p>Microsoft Azure Specialist with experience across .NET Core, MVC Framework, HTML & CSS, MERN Stack, and Next.js. This role focuses on building and deploying scalable, cloud-based solutions using Microsoft technologies, while ensuring integration, performance, and reliability across platforms.</p>
-            <div class="requirements">
-              <strong>Key Requirements:</strong>
-              <ul>
-                <li>Hands-on experience with Microsoft Azure, Dynamics 365, Power Apps, Power Automate, and Microsoft Dataverse</li>
-                <li>Solid understanding of DevOps practices and CI/CD pipelines</li>
-                <li>Familiarity with machine learning (ML) and artificial intelligence (AI) concepts</li>
-                <li>Ability to work across both frontend and backend technologies</li>
-              </ul>
+            <h4>Google Maps API Integration</h4>
+            <p>Add real-time location features to your apps or platforms. We integrate maps APIs for routing, tracking, and geolocation ideal for transport, delivery, and businesses with location-based operations.</p>
+            <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.8s">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-robot fa-3x google-icon-4"></i>
             </div>
-            <a href="applicationForm.html" target="_blank" class="btn btn-primary rounded-pill py-2 px-4">Apply Now</a>
+            <h4>AI-based Chatbot Development</h4>
+            <p>Launch chat tools that handle questions, bookings, and tasks without extra staffing. Our chatbots work 24/7, help users faster, and reduce the pressure on your internal support team.</p>
+            <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="1.0s">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-chart-bar fa-3x google-icon-1"></i>
+            </div>
+            <h4>Predictive Analytics Solutions</h4>
+            <p>Visualize business trends and performance with clear, custom dashboards. We build models that use your data to highlight patterns, flag issues early, and support better decision-making every day.</p>
+            <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="1.2s">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-project-diagram fa-3x google-icon-2"></i>
+            </div>
+            <h4>AI Integration for Business Workflows</h4>
+            <p>Automate daily tasks with smart workflows built into your existing tools. We connect systems, remove manual effort, and build custom processes that increase speed and reduce repetitive work.</p>
+            <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4">Learn More</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Career Opportunities End -->
+  <!-- Services Section End -->
 
-  <!-- Hiring Process Start -->
+  <!-- How We Work Section Start -->
   <div class="container-fluid section-light py-5">
     <div class="container py-5">
       <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-        <h2 class="section-title">Our Hiring Process</h2>
-        <h3 class="section-subtitle">We believe in a hiring process that is simple, transparent, and respectful of your time</h3>
-        <p>From your first application to your first day at UCI, we aim to make the experience smooth and straightforward.</p>
+        <h2 class="section-title">How We Make Google & AI Solutions Work for You</h2>
+        <h3 class="section-subtitle">We create connected systems that support your team, improve how work gets done, and help your business grow with clarity and confidence</h3>
       </div>
       <div class="row g-4">
         <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
-          <div class="process-item">
+          <div class="work-process-item">
             <div class="process-number">1</div>
-            <h4 class="mb-3">Application Review</h4>
-            <p>Once you submit your application, our team carefully reviews your profile to see how well your skills and experience align with the role.</p>
+            <h4 class="mb-3">Fast and Clean Setup</h4>
+            <p>We handle setup, migration, and permissions so your team can start working right away without delays, confusion, or technical issues.</p>
           </div>
         </div>
         <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
-          <div class="process-item">
+          <div class="work-process-item">
             <div class="process-number">2</div>
-            <h4 class="mb-3">Initial Discussion</h4>
-            <p>If your profile is a good match, we'll reach out for an initial conversation. This is a chance for us to get to know you better and for you to learn more about the role and our work culture.</p>
+            <h4 class="mb-3">Tools That Work Together</h4>
+            <p>We connect Google apps, email, storage, and calendars so everything runs in sync and your team works from a single system.</p>
           </div>
         </div>
         <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.4s">
-          <div class="process-item">
+          <div class="work-process-item">
             <div class="process-number">3</div>
-            <h4 class="mb-3">Technical/Skill Assessment</h4>
-            <p>Depending on the position, we may ask you to complete a task or assessment to better understand your abilities and how you approach real-world challenges.</p>
+            <h4 class="mb-3">Smooth Workflows</h4>
+            <p>We simplify everyday processes by removing manual steps, reducing back-and-forth, and helping your team complete tasks faster with fewer clicks.</p>
           </div>
         </div>
         <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.5s">
-          <div class="process-item">
+          <div class="work-process-item">
             <div class="process-number">4</div>
-            <h4 class="mb-3">Final Interview</h4>
-            <p>Candidates who move forward will have a final discussion with our leadership or project team. This stage focuses on your experience, working style, and how well you fit into the team.</p>
-          </div>
-        </div>
-        <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.6s">
-          <div class="process-item">
-            <div class="process-number">5</div>
-            <h4 class="mb-3">Offer & Onboarding</h4>
-            <p>If selected, you'll receive a formal offer. Once you accept, we'll guide you through our onboarding process and make sure you have everything you need to get started with confidence.</p>
+            <h4 class="mb-3">Reliable Ongoing Support</h4>
+            <p>We provide fast help with fixes, updates, and questions so your tools stay smooth, and your team stays focused on work.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Hiring Process End -->
+  <!-- How We Work Section End -->
 
-  <!-- Life at UCI Start -->
-  <div class="life-section">
+  <!-- CTA Section Start -->
+  <div class="cta-section">
     <div class="container py-5">
-      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-        <h2 class="section-title">Life at UCI</h2>
-        <h3 class="section-subtitle">When people feel supported, respected, and inspired, they do their best work</h3>
-        <p style="font-size: 1.1rem; opacity: 0.95;">That's why we focus on building a culture where individuals feel like part of a team, not just a workforce. We believe in creating an environment that fosters collaboration, innovation, and personal growth.</p>
+      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <h2 class="display-5 mb-4">Still Using Tools That Do Not Think for You?</h2>
+        <p class="mb-4 fs-5">Let's build Google & AI solutions that adapt, automate, and advance your business.</p>
+        <a href="contact.html" class="btn btn-light btn-lg rounded-pill px-5 py-3">Get Your Google & AI Solution</a>
       </div>
     </div>
   </div>
-  <!-- Life at UCI End -->
-
-  <!-- Get in Touch CTA Start -->
-  <div class="container-fluid section-white py-5">
-    <div class="container py-5">
-      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.2s" style="max-width: 600px;">
-        <h2 class="section-title">Ready to Join Our Team?</h2>
-        <p class="mb-4">We're always looking for talented individuals who are passionate about technology and eager to make a difference. If you don't see a position that matches your skills, feel free to reach out to us.</p>
-        <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
-          <a href="applicationForm.html" class="btn btn-primary rounded-pill py-3 px-5">View Open Positions</a>
-          <a href="contact.html" class="btn btn-outline-primary rounded-pill py-3 px-5">Get in Touch</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Get in Touch CTA End -->
+  <!-- CTA Section End -->
 
   <!-- Footer Start -->
   <div class="container-fluid footer wow fadeIn" data-wow-delay="0.2s">
@@ -693,9 +693,9 @@
                   <div class="row g-3 text-white mt-1">
                     <a href="Salesforce-Solutions.html"><i class="fas fa-angle-right me-2"></i> Salesforce Solutions </a> <br>
                     <a href="Microsoft-Solutions.html"><i class="fas fa-angle-right me-2"></i> Microsoft Solutions </a> <br>
+                    <a href="Google-AI-Solutions.html"><i class="fas fa-angle-right me-2"></i> Google & AI Solutions </a> <br>
                     <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact </a> <br>
                     <a href="privacy-policy.html"><i class="fas fa-angle-right me-2"></i> Privacy Policy </a> <br>
-                    <a href="terms-conditions.html"><i class="fas fa-angle-right me-2"></i> Terms & Conditions </a> <br>
                   </div>
                 </div>
               </div>
